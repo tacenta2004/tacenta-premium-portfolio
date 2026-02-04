@@ -147,22 +147,22 @@ const AuroraBackground: React.FC = () => {
 };
 
 // --- DEFAULT DATA ---
-const defaultData = {
+const defaultData: PortfolioPageProps = {
     logo: { initials: 'MT', name: 'Meng To' },
     navLinks: [
         { label: 'About', href: '#about' },
         { label: 'Projects', href: '#projects' },
         { label: 'Skills', href: '#skills' }
     ],
-    resume: { label: 'Resume' },
+    resume: { label: 'Resume', onClick: () => {} },
     hero: {
         titleLine1: 'Creative Developer &',
         titleLine2Gradient: 'Digital Designer',
         subtitle: 'I craft beautiful digital experiences through code and design. Specializing in modern web development, UI/UX design, and bringing innovative ideas to life.',
     },
     ctaButtons: {
-        primary: { label: 'View My Work' },
-        secondary: { label: 'Get In Touch' },
+        primary: { label: 'View My Work', onClick: () => {} },
+        secondary: { label: 'Get In Touch', onClick: () => {} },
     },
     projects: [
         { title: 'FinTech Mobile App', description: 'React Native app with AI-powered financial insights.', tags: ['React Native', 'Node.js'] },
