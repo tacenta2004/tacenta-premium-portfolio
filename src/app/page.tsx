@@ -9,7 +9,7 @@ const customPortfolioData: PortfolioPageProps = {
     },
     navLinks: [
         { label: 'Bio', href: '#about' },
-        { label: 'Work', href: '#projects' },
+        { label: 'Projects', href: '#projects' },
         { label: 'Expertise', href: '#skills' },
     ],
     resume: {
@@ -17,15 +17,16 @@ const customPortfolioData: PortfolioPageProps = {
         onClick: () => alert('Downloading CV...'),
     },
     hero: {
-        titleLine1: 'AI Digital Architect &',
-        titleLine2Gradient: 'Engineering Student',
-        subtitle: 'I build robust and scalable autonomous workflows and premium digital assets at the intersection of IoT and Intelligence.',
+        titleLine1: 'AI Architect &',
+        titleLine2Gradient: 'ECE Engineer',
+        subtitle: 'Final-year ECE student at College of Engineering, Adoor. Developing intelligent IoT systems and autonomous workflows for social safety and industrial efficiency.',
     },
     ctaButtons: {
         primary: {
             label: 'Explore My Work',
             onClick: () => {
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                const projects = document.getElementById('projects');
+                if (projects) projects.scrollIntoView({ behavior: 'smooth' });
             },
         },
         secondary: {
@@ -37,26 +38,26 @@ const customPortfolioData: PortfolioPageProps = {
     },
     projects: [
         {
-            title: 'Tacenta AI Bot',
-            description: 'Personal AI workstation setup with multi-provider fallback and automated web workflows.',
-            tags: ['OpenClaw', 'TypeScript', 'Node.js']
+            title: 'Women Safety IoT Ecosystem',
+            description: 'A 24x7 gender detection and communication system designed for railway safety, integrating real-time computer vision and IoT protocols.',
+            tags: ['IoT', 'Gender Detection', 'Embedded Systems']
         },
         {
-            title: 'Soldier 1',
-            description: 'Minimalist student portfolio template for rapid deployment.',
-            tags: ['HTML', 'CSS', 'GitHub Pages']
+            title: 'Tacenta AI Workstation',
+            description: 'A professional AI workstation with multi-provider fallback (Claude 4.5, GPT-5.2) and automated terminal control.',
+            tags: ['AI Agents', 'OpenClaw', 'TypeScript']
         },
         {
-            title: 'Vanguard Portfolio',
-            description: 'Premium 3D-animated portfolio built with Next.js and Three.js.',
-            tags: ['Next.js', 'Three.js', 'Tailwind CSS'],
+            title: 'Vanguard 3D Portfolio',
+            description: 'Premium Next.js portfolio featuring real-time WebGL Aurora animations and modern design architecture.',
+            tags: ['Three.js', 'Next.js', 'Tailwind 4'],
             imageContent: <div className="text-2xl text-white/50">🚀</div>
         },
     ],
     stats: [
-        { value: '100+', label: 'Commits per Day' },
+        { value: '4th Year', label: 'ECE @ CE Adoor' },
         { value: '200+', label: 'AI Models Integrated' },
-        { value: '24/7', label: 'Uptime' },
+        { value: 'IoT', label: 'Specialization' },
     ],
     showAnimatedBackground: true,
 };
